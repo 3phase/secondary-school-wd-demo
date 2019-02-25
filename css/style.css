@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Nougat';
+    src: url('../fonts/Nougat-ExtraBlack.ttf')  format('truetype')
+  }
+
+body {margin: 0;font-family: 'Lilita One', cursive;}
+header {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    z-index: 20;
+}
+header div {
+    width: 20%;
+    height: 100%;
+    float: left;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7em;
+    font-family: 'Nougat';
+    text-transform: uppercase;
+    cursor:  pointer;
+}
+
+header div:hover {
+    background-color: #2d2d2d;
+}
+
+header div:nth-child(3):hover {
+    background-color: #000;
+}
+
+header div.active {
+    background-color: #383838;
+}
+
+article {
+    position: relative;
+    top: 100px;
+    overflow: hidden;
+    background: url("https://cdn.supercell.com/supercell.com/190216103148/supercell.com/files/styles/hero_image_narrow/public/hero_bg_brawlstars_.jpg")  no-repeat;
+    background-size: cover;
+}
+
+article section {
+    width: 70%;
+    margin: 0 auto;
+    border: 1px solid #0e0e0e;
+    box-shadow: 0 2px 2px #000;
+    margin-top: 100px;
+    z-index: 10;
+    top: 100px;
+}
+
+.blurred-bg {
+    position: absolute;
+    width: 70%;
+    margin: 0 auto;
+    /* background: url("https://cdn.supercell.com/supercell.com/190216103148/supercell.com/files/styles/hero_image_narrow/public/hero_bg_brawlstars_.jpg"); */
+    background: url('../img/transparent-pattern.png') repeat;
+    height: 800px;
+    z-index: 0;
+}
+
+.non-blurred-ct {
+    position: relative;
+    z-index: 20;
+    min-height: 730px;
+    margin: 10px;
+}
+
+.non-blurred-ct h1 {
+    font-size: 2.0em;
+    color: #fff;
+}
+
+.non-blurred-ct h2 {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.non-blurred-ct p {
+    font-weight: 100;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.non-blurred-ct .brawler {
+    width: 45%;
+    margin: 20px;
+    /* border: 1px solid #bbb; */
+    height: 260px;
+    float: left;
+    position: relative;
+}
+
+.non-blurred-ct .brawler img { height: 100%; margin: 0 auto; display: block; }
+.non-blurred-ct .brawler.nita img, .non-blurred-ct .brawler.bull img { margin-left: 0; }
+.non-blurred-ct .brawler .brawler-title {position: absolute;bottom: 0;left: 0;right: 0;height: 50px;background-color: rgba(0,0,0,0.8);color: #FFF;font-size: 1.4em;text-align: center;line-height: 50px;} 
+
+.brawler.el-primo {
+    background-color: #bb8331;
+}
+
+.brawler.nita {
+    background-color: #634b8c;
+}
+
+.brawler.bull {
+    background-color: #4b7aa9;
+}
+
+.brawler.crow {
+    background-color: #0d192b;
+}
+
+.brawler.brawler-fs {
+    width: 96%;
+    float: none;
+}
